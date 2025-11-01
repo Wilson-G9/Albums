@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:padding="16dp"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <Spinner
+        android:id="@+id/spAlbum"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+    <!-- Ô thông tin chỉ đọc khi chọn item -->
+    <TextView android:text="Tên bài hát:" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <TextView android:id="@+id/tvTitle" android:textStyle="bold" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+    <TextView android:text="Ngày ra đĩa:" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <TextView android:id="@+id/tvDate" android:textStyle="bold" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:text="Thêm bài hát"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"/>
+
+    <ListView
+        android:id="@+id/lvSongs"
+        android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_weight="1" android:layout_marginTop="8dp"/>
+</LinearLayout>
